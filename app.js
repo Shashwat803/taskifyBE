@@ -13,7 +13,7 @@ app.use(cors({
     optionsSuccessStatus: 200,
     methods:'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
-    allowedHeaders:true,
+    allowedHeaders: ['Content-Type', 'Authorization'],
     exposedHeaders: ['Access-Control-Allow-Credentials'],
  }))
 
