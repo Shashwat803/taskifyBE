@@ -7,8 +7,9 @@ const cors = require('cors')
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
+
 app.use(cors({
-    origin:'https://taskify-fe-ruby.vercel.app',
+    origin:'*',
     optionsSuccessStatus: 200,
     methods:'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
