@@ -69,5 +69,9 @@ try {
 }
 }
 
+const message = (req, res)=>{
+res.send("Hello message")
+}
 
-module.exports = {registerUser, loginUser, currentUser}
+
+module.exports = {registerUser, loginUser, currentUser, message}
