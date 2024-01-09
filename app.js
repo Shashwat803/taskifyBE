@@ -17,6 +17,9 @@ app.use(cors({
     exposedHeaders: ['Access-Control-Allow-Credentials'],
  }))
 
+ app.get('/', (req, res)=>{
+    res.send("Hello vercel")
+ })
 
 
 app.use('/api/todos', require('./routes/todoRoutes'))
