@@ -14,7 +14,7 @@ app.use(cors({
     methods:'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     allowedHeaders:true,
-    exposedHeaders: ['Access-Control-Allow-Credentials']
+    exposedHeaders: ['Access-Control-Allow-Credentials'],
  }))
 
 
